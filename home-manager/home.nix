@@ -31,7 +31,8 @@ in {
       ".config/swappy/config".source = .config/swappy/config;
       ".config/sway/config".source = .config/sway/config;
       ".config/swaylock/config".source = .config/swaylock/config;
-      ".config/yambar/config.yml".source = .config/yambar/config.yml;
+      ".config/waybar/config".source = .config/waybar/config;
+      ".config/waybar/style.css".source = .config/waybar/style.css;
     };
 
     packages = with pkgs; [
@@ -152,12 +153,12 @@ in {
     enable = true;
 
     iconTheme = {
-      name = "rose-pine-dawn";
+      name = "rose-pine-moon";
       package = pkgs.rose-pine-icon-theme;
     };
 
     theme = {
-      name = "rose-pine-dawn";
+      name = "rose-pine-moon";
       package = pkgs.rose-pine-gtk-theme;
     };
 

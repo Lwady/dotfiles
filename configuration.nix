@@ -131,6 +131,7 @@
     maim
     multimarkdown
     imagemagick
+    openfortivpn
     openjdk
     pandoc
     pavucontrol
@@ -157,6 +158,7 @@
     vim
     virt-manager
     vlc
+    vscode
     waybar
     wayland
     wl-clipboard
