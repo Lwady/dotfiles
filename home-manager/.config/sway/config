@@ -51,9 +51,13 @@ for_window [app_id="wdisplay"] floating enable; floating_minimum_size 1050 x 750
 
 # FN Keys:
 
-# Brightnessctl:
-bindsym XF86MonBrightnessDown exec --no-startup-id "$HOME/sway-dotfiles/waybar/modules/brightness.sh down"
-bindsym XF86MonBrightnessUp exec --no-startup-id "$HOME/sway-dotfiles/waybar/modules/brightness.sh up"
+# ~ssctl:
+bindsym $mod+i exec --no-startup-id brightnessctl s 5%+
+bindsym $mod+o exec --no-startup-id brightnessctl s 5%-
+
+# Keyboard short cut to lock screen
+bindsym $mod+Shift+Escape exec swaylock -f
+
 
 
 # Volume up/down/mute:
@@ -108,12 +112,6 @@ set $laptop eDP-1
 bindswitch --reload --locked lid:on output $laptop disable
 bindswitch --reload --locked lid:off output $laptop enable
 
-# Idle configuration:
-exec swayidle -w \
-    timeout 300 'swaylock -f' \
-    timeout 600 'swaymsg "output * dpms off"' \
-        resume 'swaymsg "output * dpms on"' \
-    before-sleep 'swaylock -f'
 
 bindsym $mod+Shift+o exec swaymsg "output * enable"
 

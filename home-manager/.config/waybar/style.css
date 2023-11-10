@@ -13,7 +13,7 @@
 }
 
 #waybar {
-    background-color: rgba(76, 175, 80, 0.0);
+    background-color: rgba(249, 233, 52, 0);
     border: none;
     box-shadow: none;
 }
@@ -30,13 +30,13 @@ window#waybar {
 }
 
 #backlight, #battery, #bluetooth, #clock, #idle_inhibitor, #network, #pulseaudio {
-    border-top: 5px solid #b877db;
+    border-top: 5px solid #affe05;
 }
 
 #window {
     font-weight: bold;
     color: black;
-    background-color: #b877db;
+    background-color: #affe05;
     border-radius: 15px;
     padding-left: 10px;
     padding-right: 10px;

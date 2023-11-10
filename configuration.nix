@@ -108,6 +108,7 @@
     fuzzel
     fwupd
     gcc
+    gh
     git
     gimp
     glib
@@ -137,6 +138,7 @@
     pavucontrol
     pipenv
     plantuml
+    postgresql
     powerstat
     python3
     qemu
@@ -167,6 +169,7 @@
     wgnord
     xdg-utils
     yarn
+    _1password-gui 
   ];
 
   # Virtualisation

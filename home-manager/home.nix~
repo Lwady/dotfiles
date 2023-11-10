@@ -16,7 +16,10 @@ in {
     username = "laurawady";
     homeDirectory = "/home/laurawady";
     stateVersion = "23.05";
-    sessionVariables.GTK_THEME = "rose-pine-dawn";
+    sessionVariables = {
+      GTK_THEME = "rose-pine-dawn";
+      GITHUB_TOKEN = builtins.readFile "/home/laurawady/Git/dotfiles/home-manager/.config/github/token";
+    };
 
     file = {
       ".config/alacritty/alacritty.yml".source =
